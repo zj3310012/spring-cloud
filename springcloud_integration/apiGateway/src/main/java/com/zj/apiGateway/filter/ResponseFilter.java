@@ -1,4 +1,4 @@
-package com.yt.apiGateway.filter;
+package com.zj.apiGateway.filter;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -12,9 +12,9 @@ import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 
 import com.alibaba.fastjson.JSONObject;
 import com.netflix.zuul.context.RequestContext;
-import com.yt.apiGateway.constants.HttpMessageParams;
-import com.yt.apiGateway.enums.HttpResponseStatus;
-import com.yt.apiGateway.utils.StreamUtil;
+import com.zj.apiGateway.constants.HttpMessageParams;
+import com.zj.apiGateway.enums.HttpResponseStatus;
+import com.zj.apiGateway.utils.StreamUtil;
 
 /**
  * 响应过滤器

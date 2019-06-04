@@ -22,10 +22,10 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yt.apiGateway.constants.HttpMessageParams;
-import com.yt.apiGateway.utils.AESUtil;
-import com.yt.apiGateway.utils.OrdersUtil;
-import com.yt.apiGateway.utils.SignForDSA;
+import com.zj.apiGateway.constants.HttpMessageParams;
+import com.zj.apiGateway.utils.AESUtil;
+import com.zj.apiGateway.utils.OrdersUtil;
+import com.zj.apiGateway.utils.SignForDSA;
 
 public class DoGetAndPost {
 	
