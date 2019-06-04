@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yt.uniPlatform.mapper.TruckMapper">
+
+	<resultMap type="com.yt.uniPlatform.dataObject.TruckDO"
+		id="truckResultMap">
+		<id property="id" column="id" />
+		<result property="plate" column="plate" />
+		<result property="vehicleNo" column="vehicle_no" />
+		<result property="length" column="length" />
+		<result property="wide" column="wide" />
+		<result property="high" column="high" />
+		<result property="weight" column="weight" />
+		<result property="volume" column="volume" />
+		<result property="type" column="type" />
+		<result property="vehicleType" column="vehicle_type" />
+		<result property="runMode" column="run_mode" />
+		<result property="qrCode" column="qr_code" />
+		<result property="lineProperty" column="line_property" />
+		<result property="isTempTruck" column="is_temp_truck" />
+		<result property="isForbidden" column="is_forbidden" />
+		<result property="orgCode" column="org_code" />
+		<result property="carrierName" column="carrier_name" />
+		<result property="carrierCode" column="carrier_code" />
+		<result property="fkCarrierId" column="fk_carrier_id" />
+		<result property="ifValid" column="if_valid" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+		<result property="trailers" column="trailers" />
+		<result property="isOnWay" column="is_onway" />
+		<result property="plateType" column="plate_type" />
+		<result property="containerLength" column="container_length" />
+		<result property="containerWide" column="container_wide" />
+		<result property="containerHigh" column="container_high" />
+		<result property="containerModel" column="container_model" />
+		<result property="lineType" column="line_type" />
+	</resultMap>
+
+	<select id="queryTruckListByCondition"
+		parameterType="com.yt.uniPlatform.dataObject.TruckDO"
+		resultMap="truckResultMap">
+		select * from truck
+		<where>
+			<if test="truck.plate != null and truck.plate !='' ">
+				and plate like concat('%', #{truck.plate}, '%')
+			</if>
+			<if test="truck.vehicleNo != null and truck.vehicleNo !='' ">
+				and vehicle_no like concat('%', #{truck.vehicleNo}, '%')
+			</if>
+			<if test="truck.carrierName != null and truck.carrierName !='' ">
+				and carrier_name like concat('%', #{truck.carrierName},
+				'%')
+			</if>
+			<if test="truck.runMode != null and truck.runMode !='' ">
+				and run_mode = #{truck.runMode}
+			</if>
+			<if test="truck.isTempTruck != null and truck.isTempTruck !=''">
+				and is_temp_truck = #{truck.isTempTruck}
+			</if>
+		</where>
+	</select>
+
+	<select id="queryTruckById" resultMap="truckResultMap">
+		select * from truck where
+		id = #{id}
+	</select>
+</mapper>

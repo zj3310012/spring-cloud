@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper
+	namespace="com.yt.uniPlatform.mapper.TransportProtocolMapper">
+	<resultMap
+		type="com.yt.uniPlatform.dataObject.TransportProtocolDO"
+		id="transportProtocolResultMap">
+		<id property="id" column="id" />
+		<result property="transNumber" column="trans_number" />
+		<result property="startTime" column="start_time" />
+		<result property="endTime" column="end_time" />
+		<result property="settlementMode" column="settlement_mode" />
+		<result property="driverFreight" column="driver_freight" />
+		<result property="note" column="note" />
+		<result property="plate" column="plate" />
+		<result property="createDate" column="create_date" />
+		<result property="createTime" column="create_time" />
+		<result property="fkDriverId" column="fk_driver_id" />
+		<result property="fkToLocationCode"
+			column="fk_to_location_code" />
+		<result property="fkAtLocationCode"
+			column="fk_at_location_code" />
+		<result property="fkOperatorId" column="fk_operator_id" />
+		<result property="status" column="status" />
+		<result property="statusTime" column="status_time" />
+		<result property="updateTime" column="update_time" />
+		<result property="relayStatus" column="relay_status" />
+		<result property="isOnWay" column="is_onway" />
+		<result property="isTempTruck" column="is_temp_truck" />
+		<result property="isOverTime" column="is_overtime" />
+		<result property="lineNo" column="line_no" />
+		<result property="carrierName" column="carrier_name" />
+		<result property="isLink" column="is_link" />
+		<result property="link" column="link" />
+		<result property="vehicleType" column="vehicle_type" />
+		<result property="runMode" column="run_mode" />
+		<result property="voucher" column="voucher" />
+		<result property="fkTruckId" column="fk_truck_id" />
+		<result property="trailerHead" column="trailer_head" />
+		<result property="lineProperty" column="line_property" />
+		<result property="carrierCode" column="carrier_code" />
+		<result property="createType" column="create_type" />
+	</resultMap>
+
+	<select id="queryTransportProtocolByCondition"
+		parameterType="com.yt.uniPlatform.dataObject.TransportProtocolDO"
+		resultMap="transportProtocolResultMap">
+
+		select * from transport_protocol
+		<where>
+			<if
+				test="transportProtocol.createType != null and transportProtocol.createType !='' ">
+				and create_type = #{transportProtocol.createType}
+			</if>
+
+			<if
+				test="transportProtocol.status != null and transportProtocol.status !='' ">
+				and status = #{transportProtocol.status}
+			</if>
+
+			<if
+				test="transportProtocol.carrierName != null and transportProtocol.carrierName !='' ">
+				and carrier_name like concat('%',
+				#{transportProtocol.carrierName}, '%')
+			</if>
+
+			<if
+				test="transportProtocol.fkDriverId != null and transportProtocol.fkDriverId !='' ">
+				and fk_driver_id = #{transportProtocol.fkDriverId}
+			</if>
+
+			<if
+				test="transportProtocol.startTime != null and transportProtocol.startTime !='' and transportProtocol.endTime != null and transportProtocol.endTime !=''">
+				and create_time &gt;= #{transportProtocol.startTime} and
+				create_time &lt;= #{transportProtocol.endTime}
+			</if>
+		</where>
+
+	</select>
+
+	<select id="queryTransportProtocolByTransNumber"
+		resultMap="transportProtocolResultMap">
+		select * from transport_protocol where trans_number =
+		#{transNumber}
+	</select>
+
+	<select id="queryTransportProtocolById"
+		resultMap="transportProtocolResultMap">
+		select * from transport_protocol where id = #{id}
+	</select>
+
+</mapper>

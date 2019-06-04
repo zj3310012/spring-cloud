@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper
+	namespace="com.yt.uniPlatform.mapper.CarrierTruckCommitMapper">
+	<resultMap
+		type="com.yt.uniPlatform.dataObject.CarrierTruckCommitDO"
+		id="carrierTruckCommitResultMap">
+		<id property="id" column="id" />
+		<result property="isBlack" column="is_black" />
+		<result property="isTempTruck" column="is_temp_truck" />
+		<result property="cgCommitResult" column="cg_commit_result" />
+		<result property="qyCommitResult" column="qy_commit_result" />
+		<result property="isOnline" column="is_online" />
+		<result property="isNet" column="is_net" />
+		<result property="fkCarrierId" column="fk_carrier_id" />
+		<result property="fkTruckPlate" column="fk_truck_plate" />
+		<result property="vehicleType" column="vehicle_type" />
+		<result property="volumn" column="volumn" />
+		<result property="realVehicleType" column="real_vehicle_type" />
+		<result property="realVolumn" column="real_volumn" />
+		<result property="lineProperty" column="line_property" />
+		<result property="isForbidden" column="is_forbidden" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+		<result property="isOnWay" column="is_onway" />
+		<result property="operator" column="operator" />
+		<result property="operatorId" column="operator_id" />
+		<result property="reason" column="reason" />
+		<result property="shipperName" column="shipper_name" />
+		<result property="isWantFormal" column="is_want_formal" />
+		<result property="realLong" column="real_long" />
+		<result property="realWidth" column="real_width" />
+		<result property="realHeight" column="real_height" />
+	</resultMap>
+
+	<select id="queryCarrierTruckCommitByFkTruckPlate"
+		resultMap="carrierTruckCommitResultMap">
+		select * from carrier_truck_commit where fk_truck_plate =
+		#{fkTruckPlate}
+	</select>
+</mapper>		
