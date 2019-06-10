@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yt.coreapi.utils.ReturnData;
 import com.zj.dataExchange.service.fence.FenceService;
+import com.zj.dataExchange.utils.ReturnData;
 import com.zj.dataExchange.web.model.Fence;
 
 import io.swagger.annotations.Api;

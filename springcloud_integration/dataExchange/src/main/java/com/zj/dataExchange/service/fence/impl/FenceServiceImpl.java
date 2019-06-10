@@ -5,12 +5,12 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageInfo;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.yt.coreapi.dto.FenceDTO;
-import com.yt.coreapi.utils.BaseConvert;
-import com.yt.coreapi.utils.ReturnData;
 import com.zj.dataExchange.service.AbstractServiceImpl;
 import com.zj.dataExchange.service.fence.FenceService;
+import com.zj.dataExchange.service.fence.dto.FenceDTO;
 import com.zj.dataExchange.service.fence.feign.FenceClientService;
+import com.zj.dataExchange.utils.BaseConvert;
+import com.zj.dataExchange.utils.ReturnData;
 import com.zj.dataExchange.web.model.Fence;
 import com.zj.dataExchange.web.vo.FenceVO;
 

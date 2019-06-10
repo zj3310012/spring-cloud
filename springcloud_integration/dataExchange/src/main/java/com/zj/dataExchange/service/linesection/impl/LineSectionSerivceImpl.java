@@ -4,11 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.yt.coreapi.dto.LineSectionDTO;
-import com.yt.coreapi.utils.ReturnData;
 import com.zj.dataExchange.service.AbstractServiceImpl;
 import com.zj.dataExchange.service.linesection.LineSectionSerivce;
+import com.zj.dataExchange.service.linesection.dto.LineSectionDTO;
 import com.zj.dataExchange.service.linesection.feign.LineSectionClinetService;
+import com.zj.dataExchange.utils.ReturnData;
 import com.zj.dataExchange.web.vo.LineSectionVO;
 
 /**

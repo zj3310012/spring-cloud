@@ -2,8 +2,6 @@ package com.zj.dataExchange.service.line.feign;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 
-import com.yt.coreapi.serivce.LineService;
-
 /**
  * 
  * @author zhangjing

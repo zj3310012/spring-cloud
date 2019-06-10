@@ -4,11 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.yt.coreapi.dto.DriverDTO;
-import com.yt.coreapi.utils.ReturnData;
 import com.zj.dataExchange.service.AbstractServiceImpl;
 import com.zj.dataExchange.service.driver.DriverService;
+import com.zj.dataExchange.service.driver.dto.DriverDTO;
 import com.zj.dataExchange.service.driver.feign.DriverClientService;
+import com.zj.dataExchange.utils.ReturnData;
 import com.zj.dataExchange.web.vo.DriverVO;
 
 /**

@@ -1,6 +1,6 @@
 package com.zj.dataExchange.service.user;
 
-import com.yt.coreapi.utils.ReturnData;
+import com.zj.dataExchange.utils.ReturnData;
 import com.zj.dataExchange.web.model.User;
 
 /**
@@ -9,7 +9,7 @@ import com.zj.dataExchange.web.model.User;
  * @author zhangjing
  * date: 2019年3月14日 上午11:50:57
  */
-public interface UserService {
+public interface UserService {	
 
 	/**
 	  * 根据条件获取用户列表

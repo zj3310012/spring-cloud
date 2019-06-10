@@ -2,8 +2,6 @@ package com.zj.dataExchange.web.model;
 
 import java.util.Date;
 
-import com.yt.coreapi.utils.Page;
-
 public class User extends Page {
 
 	/**

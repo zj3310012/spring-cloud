@@ -2,8 +2,6 @@ package com.zj.dataExchange.service.transportlocation.fegin;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 
-import com.yt.coreapi.serivce.TransportLocationService;
-
 /**
  * 
  * @author zhangjing

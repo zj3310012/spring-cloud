@@ -4,11 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.yt.coreapi.dto.ShippersDTO;
-import com.yt.coreapi.utils.ReturnData;
 import com.zj.dataExchange.service.AbstractServiceImpl;
 import com.zj.dataExchange.service.shippers.ShippersService;
+import com.zj.dataExchange.service.shippers.dto.ShippersDTO;
 import com.zj.dataExchange.service.shippers.feign.ShippersClientService;
+import com.zj.dataExchange.utils.ReturnData;
 import com.zj.dataExchange.web.vo.ShippersVO;
 
 /**

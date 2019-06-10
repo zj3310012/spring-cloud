@@ -1,6 +1,6 @@
 package com.zj.dataExchange.service.shippers;
 
-import com.yt.coreapi.utils.ReturnData;
+import com.zj.dataExchange.utils.ReturnData;
 
 /**
  * 

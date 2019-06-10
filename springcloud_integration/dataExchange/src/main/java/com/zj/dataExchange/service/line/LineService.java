@@ -1,6 +1,6 @@
 package com.zj.dataExchange.service.line;
 
-import com.yt.coreapi.utils.ReturnData;
+import com.zj.dataExchange.utils.ReturnData;
 import com.zj.dataExchange.web.model.Line;
 
 /**
