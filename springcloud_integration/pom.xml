@@ -42,11 +42,12 @@
 
 	<packaging>pom</packaging>
 	<modules>
-		<module>apiGateway</module>
+		
 		<module>dataExchange</module>
 		<module>register_center</module>
 		<module>sidecar</module>
 		<module>uniPlatform</module>
 		<module>zipkin-server</module>
+		<module>apiGateway</module>
 	</modules>
 </project>
