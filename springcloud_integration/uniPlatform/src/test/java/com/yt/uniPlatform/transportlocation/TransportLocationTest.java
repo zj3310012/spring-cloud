@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
-import com.yt.coreapi.dto.TransportLocationDTO;
-import com.yt.coreapi.serivce.TransportLocationService;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.transportlocation.TransportLocationService;
+import com.yt.uniPlatform.service.transportlocation.dto.TransportLocationDTO;
 
 public class TransportLocationTest extends UniPlatformApplicationTests{
 

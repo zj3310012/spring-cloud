@@ -4,9 +4,9 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yt.coreapi.dto.LineSectionDTO;
-import com.yt.coreapi.serivce.LineSectionSerivce;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.linesection.LineSectionSerivce;
+import com.yt.uniPlatform.service.linesection.dto.LineSectionDTO;
 
 public class LineSectionTest extends UniPlatformApplicationTests{
 

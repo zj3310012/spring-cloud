@@ -5,17 +5,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
-import com.yt.uniPlatform.dataObject.ShippersDO;
-import com.yt.uniPlatform.mapper.ShippersMapper;
+import com.yt.uniPlatform.service.shippers.ShippersService;
+import com.yt.uniPlatform.service.shippers.dto.ShippersDTO;
 
 public class ShippersTest extends UniPlatformApplicationTests{
 
 	@Autowired
-	private ShippersMapper shippersMapper;
+	private ShippersService shippersService;
 	
 	@Test
 	public void testGetLShippersById() {
-		ShippersDO shippers = shippersMapper.queryShippersById("38");
+		ShippersDTO shippers = shippersService.queryShippersById("38");
 		System.out.println(JSONObject.toJSONString(shippers));
 	}
 }

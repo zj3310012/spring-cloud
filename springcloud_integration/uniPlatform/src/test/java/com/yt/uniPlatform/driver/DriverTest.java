@@ -4,9 +4,9 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yt.coreapi.dto.DriverDTO;
-import com.yt.coreapi.serivce.DriverService;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.driver.DriverService;
+import com.yt.uniPlatform.service.driver.dto.DriverDTO;
 
 public class DriverTest extends UniPlatformApplicationTests{
 

@@ -5,9 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSONArray;
 import com.github.pagehelper.PageInfo;
-import com.yt.coreapi.dto.FenceDTO;
-import com.yt.coreapi.serivce.FenceSerivce;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.fence.FenceSerivce;
+import com.yt.uniPlatform.service.fence.dto.FenceDTO;
 
 public class FenceTest extends UniPlatformApplicationTests{
 

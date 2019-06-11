@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
-import com.yt.coreapi.dto.UserDTO;
-import com.yt.coreapi.serivce.UserService;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.user.UserService;
+import com.yt.uniPlatform.service.user.dto.UserDTO;
 
 public class UserTest extends UniPlatformApplicationTests{
 

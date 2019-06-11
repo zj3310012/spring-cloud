@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
-import com.yt.coreapi.dto.TruckDTO;
-import com.yt.coreapi.serivce.TruckService;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.truck.TruckService;
+import com.yt.uniPlatform.service.truck.dto.TruckDTO;
 
 public class TruckTest extends UniPlatformApplicationTests{
 

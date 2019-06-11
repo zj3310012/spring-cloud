@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
-import com.yt.coreapi.dto.LineDTO;
-import com.yt.coreapi.serivce.LineService;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.line.LineService;
+import com.yt.uniPlatform.service.line.dto.LineDTO;
 
 public class LineTest extends UniPlatformApplicationTests{
 

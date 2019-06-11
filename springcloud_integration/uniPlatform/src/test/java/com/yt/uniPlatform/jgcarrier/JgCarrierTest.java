@@ -5,9 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSONArray;
 import com.github.pagehelper.PageInfo;
-import com.yt.coreapi.dto.JgCarrierDTO;
-import com.yt.coreapi.serivce.JgCarrierService;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.jgCarrier.JgCarrierService;
+import com.yt.uniPlatform.service.jgCarrier.dto.JgCarrierDTO;
 
 public class JgCarrierTest extends UniPlatformApplicationTests{
 

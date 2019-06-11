@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
-import com.yt.coreapi.dto.BdmOrganizationDTO;
-import com.yt.coreapi.serivce.BdmOrganizationService;
 import com.yt.uniPlatform.UniPlatformApplicationTests;
+import com.yt.uniPlatform.service.bdmorganization.BdmOrganizationService;
+import com.yt.uniPlatform.service.bdmorganization.dto.BdmOrganizationDTO;
 
 public class BdmOrganizationTest extends UniPlatformApplicationTests{
 
