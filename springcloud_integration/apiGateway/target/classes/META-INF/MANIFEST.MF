@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Implementation-Title: apiGateway
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: Administrator
-Implementation-Vendor-Id: com.zj
+Implementation-Vendor-Id: com.yt
 Build-Jdk: 1.8.0_201
 Implementation-URL: http://projects.spring.io/spring-boot/apiGateway/
 Created-By: Maven Integration for Eclipse
