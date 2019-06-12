@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0d16bcd-2498-41de-b36f-744a850830ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/ApiGatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/config/FilterConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/constants/HttpMessageParams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/dataObject/UserDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/enums/HttpResponseStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/filter/AbstractResponseFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/filter/AuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/filter/ErrorFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/filter/RequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/filter/ResponseFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/utils/AESUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/utils/LocalMapUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/utils/OrdersUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/utils/SignForDSA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/utils/SpringContextTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/utils/StreamUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/wrapper/HttpServletRequestWrapperForGet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/java/com/yt/apiGateway/wrapper/HttpServletRequestWrapperForPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/resources/mapper/config/sqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/main/resources/mapper/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/ApiGatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/AbstractCommon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/DoGetAndPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/bdmorganization/BdmOrganizationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/carriertruckcommit/CarrierTrunkCommitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/commits/CommitsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/driver/DriverTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/fence/FenceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/jgcarrier/JgCarrierTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/line/LineTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/linesection/LineSectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/shippers/ShippersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/transportlocation/TransportLocationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/transportprotocol/TransportProtocolTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/truck/TruckTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/src/test/java/com/yt/apiGateway/test/user/UserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/META-INF/maven/com.yt/apiGateway/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/META-INF/maven/com.yt/apiGateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/bdm_common_thire_part_key.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/ApiGatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/config/FilterConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/constants/HttpMessageParams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/dataObject/UserDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/enums/HttpResponseStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/filter/AbstractResponseFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/filter/AuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/filter/ErrorFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/filter/RequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/filter/ResponseFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/utils/AESUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/utils/LocalMapUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/utils/OrdersUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/utils/SignForDSA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/utils/SpringContextTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/utils/StreamUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/wrapper/HttpServletRequestWrapperForGet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/com/yt/apiGateway/wrapper/HttpServletRequestWrapperForPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/mapper/config/sqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/classes/mapper/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/ApiGatewayApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/AbstractCommon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/DoGetAndPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/bdmorganization/BdmOrganizationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/carriertruckcommit/CarrierTrunkCommitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/commits/CommitsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/driver/DriverTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/fence/FenceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/jgcarrier/JgCarrierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/line/LineTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/linesection/LineSectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/shippers/ShippersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/transportlocation/TransportLocationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/transportprotocol/TransportProtocolTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/truck/TruckTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/apiGateway/target/test-classes/com/yt/apiGateway/test/user/UserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/DataExchangeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/config/CommonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/config/SwaggerConfig2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/enums/ResponseStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/AbstractServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/bdmorganization/BdmOrganizationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/bdmorganization/dto/BdmOrganizationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/bdmorganization/feign/BdmOrganizationClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/bdmorganization/feign/BdmOrganizationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/bdmorganization/impl/BdmOrganizationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/carriertruckcommit/CarrierTruckCommitService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/carriertruckcommit/dto/CarrierTruckCommitDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/carriertruckcommit/feign/CarrierTruckCommitClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/carriertruckcommit/feign/CarrierTruckCommitService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/carriertruckcommit/impl/CarrierTruckCommitServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/commits/CommitsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/commits/dto/CommitsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/commits/feign/CommitsClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/commits/feign/CommitsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/commits/impl/CommitsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/driver/DriverService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/driver/dto/DriverDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/driver/feign/DriverClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/driver/feign/DriverService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/driver/impl/DriverServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/fence/FenceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/fence/dto/FenceDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/fence/feign/FenceClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/fence/feign/FenceSerivce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/fence/impl/FenceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/jgCarrier/JgCarrierService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/jgCarrier/dto/JgCarrierDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/jgCarrier/feign/JgCarrierClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/jgCarrier/feign/JgCarrierService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/jgCarrier/impl/JgCarrierServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/line/LineService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/line/dto/LineDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/line/feign/LineClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/line/feign/LineService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/line/impl/LineServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/linesection/LineSectionSerivce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/linesection/dto/LineSectionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/linesection/feign/LineSectionClinetService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/linesection/feign/LineSectionSerivce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/linesection/impl/LineSectionSerivceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/shippers/ShippersService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/shippers/dto/ShippersDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/shippers/feign/ShippersClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/shippers/feign/ShippersService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/shippers/impl/ShippersServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportlocation/TransportLocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportlocation/dto/TransportLocationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportlocation/fegin/TransportLocationClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportlocation/fegin/TransportLocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportlocation/impl/TransportLocationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportprotocol/TransportProtocolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportprotocol/dto/TransportProtocolDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportprotocol/feign/TransportProtocolClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportprotocol/feign/TransportProtocolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/transportprotocol/impl/TransportProtocolServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/truck/TruckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/truck/dto/TruckDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/truck/feign/TruckClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/truck/feign/TruckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/truck/impl/TruckServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/user/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/user/feign/UserClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/user/feign/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/service/user/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/utils/BaseConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/utils/Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/utils/ReturnData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/BdmOrganizationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/CarrierTruckCommitController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/CommitsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/DriverController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/FenceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/JgCarrierController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/LineController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/LineSectionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/ShippersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/TransportLocationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/TransportProtocolController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/TruckController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/BdmOrganization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/CarrierTruckCommit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/Commits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/Fence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/JgCarrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/Line.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/LineSection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/Shippers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/TransportLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/TransportProtocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/Truck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/BdmOrganizationVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/CarrierTruckCommitVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/CommitsVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/DriverVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/FenceVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/JgCarrierVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/LineSectionVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/LineVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/ShippersVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/TransportLocationVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/TransportProtocolVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/TruckVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/java/com/zj/dataExchange/web/vo/UserVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/src/test/java/com/yt/dataExchange/DataExchangeApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/META-INF/maven/com.yt/dataExchange/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/META-INF/maven/com.yt/dataExchange/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/DataExchangeApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/config/CommonConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/config/SwaggerConfig2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/AbstractServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/bdmorganization/BdmOrganizationClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/bdmorganization/BdmOrganizationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/bdmorganization/impl/BdmOrganizationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/carriertruckcommit/CarrierTruckCommitClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/carriertruckcommit/CarrierTruckCommitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/carriertruckcommit/impl/CarrierTruckCommitServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/commits/CommitsClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/commits/CommitsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/commits/impl/CommitsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/driver/DriverClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/driver/DriverService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/driver/impl/DriverServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/fence/FenceClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/fence/FenceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/fence/impl/FenceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/jgCarrier/JgCarrierClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/jgCarrier/JgCarrierService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/jgCarrier/impl/JgCarrierServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/line/LineClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/line/LineService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/line/impl/LineServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/linesection/LineSectionClinetService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/linesection/LineSectionSerivce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/linesection/impl/LineSectionSerivceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/shippers/ShippersClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/shippers/ShippersService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/shippers/impl/ShippersServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/transportlocation/TransportLocationClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/transportlocation/TransportLocationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/transportlocation/impl/TransportLocationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/transportprotocol/TransportProtocolClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/transportprotocol/TransportProtocolService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/transportprotocol/impl/TransportProtocolServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/truck/TruckClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/truck/TruckService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/truck/impl/TruckServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/user/UserClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/user/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/service/user/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/utils/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/BdmOrganizationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/CarrierTruckCommitController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/CommitsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/DriverController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/FenceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/JgCarrierController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/LineController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/LineSectionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/ShippersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/TransportLocationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/TransportProtocolController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/TruckController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/BdmOrganization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/CarrierTruckCommit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/Commits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/Fence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/JgCarrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/LineSection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/Shippers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/TransportLocation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/TransportProtocol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/Truck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/BdmOrganizationVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/CarrierTruckCommitVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/CommitsVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/DriverVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/FenceVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/JgCarrierVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/LineSectionVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/LineVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/ShippersVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/TransportLocationVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/TransportProtocolVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/TruckVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/com/yt/dataExchange/web/vo/UserVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/dataExchange/target/test-classes/com/yt/dataExchange/DataExchangeApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springcloud_integration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/UniPlatformApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/config/CommonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/BdmOrganizationDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/CarrierTruckCommitDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/CommitsDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/DriverDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/FenceDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/JgCarrierDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/LineDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/LineSectionDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/ShippersDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/TransportLocationDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/TransportProtocolDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/TruckDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/dataObject/UserDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/BdmOrganizationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/CarrierTruckCommitMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/CommitsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/DriverMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/FenceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/JgCarrierMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/LineMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/LineSectionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/ShippersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/TransportLocationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/TransportProtocolMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/TruckMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/AbstractServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/bdmorganization/BdmOrganizationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/bdmorganization/dto/BdmOrganizationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/bdmorganization/impl/BdmOrganizationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/carriertruckcommit/CarrierTruckCommitService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/carriertruckcommit/dto/CarrierTruckCommitDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/carriertruckcommit/impl/CarrierTruckCommitImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/commits/CommitsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/commits/dto/CommitsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/commits/impl/CommitsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/driver/DriverService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/driver/dto/DriverDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/driver/impl/DriverServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/fence/FenceSerivce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/fence/dto/FenceDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/fence/impl/FenceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/jgCarrier/JgCarrierService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/jgCarrier/dto/JgCarrierDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/jgCarrier/impl/JgCarrierServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/line/LineService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/line/dto/LineDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/line/impl/LineServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/linesection/LineSectionSerivce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/linesection/dto/LineSectionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/linesection/impl/LineSectionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/shippers/ShippersService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/shippers/dto/ShippersDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/shippers/impl/ShippersServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/transportlocation/TransportLocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/transportlocation/dto/TransportLocationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/transportlocation/impl/TransportLocationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/transportprotocol/TransportProtocolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/transportprotocol/dto/TransportProtocolDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/transportprotocol/impl/TransportProtocolServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/truck/TruckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/truck/dto/TruckDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/truck/impl/TruckServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/user/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/service/user/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/utils/BaseConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/java/com/yt/uniPlatform/utils/Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/bdmOrganizationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/carrierTruckCommitMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/commitsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/config/sqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/driverMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/fenceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/jgCarrierMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/lineMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/lineSectionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/shippersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/transportLocationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/transportProtocolMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/truckMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/main/resources/mapper/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/UniPlatformApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/bdmorganization/BdmOrganizationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/carriertruckcommit/CarrierTruckCommitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/commits/CommitsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/driver/DriverTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/fence/FenceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/jgcarrier/JgCarrierTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/line/LineTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/linesection/LineSectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/shippers/ShippersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/test/LogBackTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/transportlocation/TransportLocationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/transportprotocol/TransportProtocolTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/truck/TruckTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/src/test/java/com/yt/uniPlatform/user/UserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/META-INF/maven/com.yt/uniPlatform/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/META-INF/maven/com.yt/uniPlatform/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/UniPlatformApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/UniPlatformApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/config/CommonConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/config/CommonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/BdmOrganizationDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/BdmOrganizationDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/CarrierTruckCommitDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/CarrierTruckCommitDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/CommitsDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/CommitsDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/DriverDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/DriverDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/FenceDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/FenceDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/JgCarrierDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/JgCarrierDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/LineDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/LineDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/LineSectionDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/LineSectionDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/ShippersDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/ShippersDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/TransportLocationDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/TransportLocationDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/TransportProtocolDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/TransportProtocolDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/TruckDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/TruckDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/UserDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/dataObject/UserDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/BdmOrganizationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/BdmOrganizationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/CarrierTruckCommitMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/CarrierTruckCommitMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/CommitsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/CommitsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/DriverMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/DriverMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/FenceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/FenceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/JgCarrierMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/JgCarrierMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/LineMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/LineMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/LineSectionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/LineSectionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/ShippersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/ShippersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/TransportLocationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/TransportLocationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/TransportProtocolMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/TransportProtocolMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/TruckMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/TruckMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/AbstractServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/AbstractServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/BdmOrganizationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/BdmOrganizationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/CarrierTruckCommitImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/CarrierTruckCommitImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/CommitsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/CommitsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/DriverServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/DriverServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/FenceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/FenceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/JgCarrierServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/JgCarrierServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/LineSectionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/LineSectionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/LineServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/LineServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/ShippersServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/ShippersServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/TransportLocationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/TransportLocationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/TransportProtocolServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/TransportProtocolServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/TruckServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/TruckServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/com/yt/uniPlatform/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/bdmOrganizationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/carrierTruckCommitMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/commitsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/config/sqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/driverMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/fenceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/jgCarrierMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/lineMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/lineSectionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/shippersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/transportLocationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/transportProtocolMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/truckMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/classes/mapper/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/UniPlatformApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/bdmorganization/BdmOrganizationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/carriertruckcommit/CarrierTruckCommitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/commits/CommitsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/driver/DriverTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/fence/FenceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/jgcarrier/JgCarrierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/line/LineTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/linesection/LineSectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/shippers/ShippersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/test/LogBackTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/transportlocation/TransportLocationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/transportprotocol/TransportProtocolTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/truck/TruckTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud_integration/uniPlatform/target/test-classes/com/yt/uniPlatform/user/UserTest.class" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/sidecar$spring_cloud.coverage" NAME="spring_cloud Coverage Results" MODIFIED="1550457840183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sidecar_python$spring_cloud.coverage" NAME="spring_cloud Coverage Results" MODIFIED="1560327967955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring_cloud.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spring_cloud.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-71" />
+    <option name="y" value="11" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sidecar_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sidecar_python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sidecar_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="sidecar_python" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="sidecar_python" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="spring_cloud" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spring_cloud.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="sidecar_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.spring_cloud" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0d16bcd-2498-41de-b36f-744a850830ff" name="Default Changelist" comment="" />
+      <created>1550115047025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550115047025</updated>
+      <workItem from="1550115074705" duration="8016000" />
+      <workItem from="1550198110333" duration="960000" />
+      <workItem from="1550201028848" duration="1214000" />
+      <workItem from="1550457826738" duration="1796000" />
+      <workItem from="1550570593887" duration="654000" />
+      <workItem from="1550627741547" duration="382000" />
+      <workItem from="1550818866191" duration="598000" />
+      <workItem from="1560327292285" duration="632000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14252000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21393643" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32988507" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/globals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2052" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="369" selection-start-line="369" selection-end-line="369" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="805" selection-start-line="805" selection-end-line="805" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/structures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/Administrator/AppData/Local/Programs/Python/Python38/Lib/abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/Administrator/AppData/Local/Programs/Python/Python38/Lib/_collections_abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="839" selection-start-line="839" selection-end-line="839" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_cloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
