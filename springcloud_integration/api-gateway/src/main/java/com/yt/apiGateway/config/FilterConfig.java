@@ -11,7 +11,6 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import com.yt.apiGateway.constants.HttpMessageParams;
-import com.yt.apiGateway.filter.AuthenticationFilter;
 import com.yt.apiGateway.filter.ErrorFilter;
 import com.yt.apiGateway.filter.RequestFilter;
 import com.yt.apiGateway.filter.ResponseFilter;
@@ -23,10 +22,10 @@ import com.yt.apiGateway.filter.ResponseFilter;
 @Configuration
 public class FilterConfig {
 
-	@Bean
-	public AuthenticationFilter getAuthenticationFilter() {
-		return new AuthenticationFilter();
-	}
+	/*
+	 * @Bean public AuthenticationFilter getAuthenticationFilter() { return new
+	 * AuthenticationFilter(); }
+	 */
 
 	@Bean
 	public RequestFilter accessFilter() {
