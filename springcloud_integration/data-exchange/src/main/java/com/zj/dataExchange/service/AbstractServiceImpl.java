@@ -45,12 +45,12 @@ public abstract class AbstractServiceImpl {
 	
 	protected ReturnData invokeCallback(Object obj,Throwable e,String method) {
 		if(HystrixTimeoutException.class.isAssignableFrom(e.getClass())|| RetryableException.class.isAssignableFrom(e.getClass())) {
-			LOGGER.error("连接统一平台(uniPlatform)超时,接口:" +method+ ",请求参数:"+JSON.toJSONString(obj), e);
+			LOGGER.error("连接统一平台(uni-platform)超时,接口:" +method+ ",请求参数:"+JSON.toJSONString(obj), e);
 			return new ReturnData(ResponseStatus.CONNECTION_TIMED_OUT.getCode(), "",
 					ResponseStatus.CONNECTION_TIMED_OUT.getMsg());
 		}
 		else {
-			LOGGER.error("统一平台(uniPlatform)系统错误,接口:" +method+ ",请求参数:"+JSON.toJSONString(obj), e);
+			LOGGER.error("统一平台(uni-platform)系统错误,接口:" +method+ ",请求参数:"+JSON.toJSONString(obj), e);
 			return new ReturnData(ResponseStatus.INTERNAL_SERVER_ERROR.getCode(), "",
 					ResponseStatus.INTERNAL_SERVER_ERROR.getMsg());
 		}
