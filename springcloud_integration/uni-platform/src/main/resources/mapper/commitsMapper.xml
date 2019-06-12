@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper	namespace="com.yt.uniPlatform.mapper.CommitsMapper">
+	<resultMap type="com.yt.uniPlatform.dataObject.CommitsDO" id="commitsResultMap">
+		<id property="id" column="id" />
+		<result property="reason" column="reason" />
+		<result property="createTime" column="create_time" />
+		<result property="status" column="status" />
+		<result property="star" column="star" />
+		<result property="shipperId" column="shipper_id" />
+		<result property="tempApproved" column="temp_approved" />
+		<result property="managerId" column="manager_id" />
+	</resultMap>
+	
+	<select id="queryCommitsListByCondition" 
+	parameterType="com.yt.uniPlatform.dataObject.CommitsDO"
+	resultMap="commitsResultMap">
+		select * from commits
+		<where>
+			<if test="commits.status != null and commits.status !='' ">
+	status = #{commits.status}
+			</if>
+			<if test="commits.shipperId != null and commits.shipperId !='' ">
+				shipper_id = #{commits.shipperId}
+			</if>
+		</where>
+	</select>
+	
+	<select id="queryCommitsById" resultMap="commitsResultMap">
+		select * from commits where id = #{id}
+	</select>
+	
+</mapper>	

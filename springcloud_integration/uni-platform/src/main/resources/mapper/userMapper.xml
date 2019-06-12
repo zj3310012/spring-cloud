@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yt.uniPlatform.mapper.UserMapper">
+
+	<resultMap type="com.yt.uniPlatform.dataObject.UserDO"
+		id="userResultMap">
+		<id property="id" column="id" />
+		<result property="transNumber" column="trans_number" />
+		<result property="hash" column="hash" />
+		<result property="email" column="email" />
+		<result property="mobile" column="mobile" />
+		<result property="telephone" column="telephone" />
+		<result property="roleType" column="role_type" />
+		<result property="active" column="active" />
+		<result property="createTime" column="create_time" />
+		<result property="username" column="username" />
+		<result property="fullname" column="fullname" />
+		<result property="photoUrl" column="photo_url" />
+		<result property="zhName" column="zh_name" />
+		<result property="userNo" column="user_no" />
+		<result property="registractionId" column="registration_id" />
+		<result property="fkLocationCode" column="fk_location_code" />
+		<result property="fkDeptId" column="fk_dept_id" />
+		<result property="updateTime" column="update_time" />
+		<result property="source" column="source" />
+		<result property="userType" column="user_type" />
+		<result property="address" column="address" />
+		<result property="comType" column="com_type" />
+		<result property="deleteFlag" column="delete_flag" />
+		<result property="reason" column="reason" />
+	</resultMap>
+
+	<select id="queryUserListByCondition"
+		parameterType="com.yt.uniPlatform.dataObject.UserDO"
+		resultMap="userResultMap">
+		select * from user
+		<where>
+			<if test="user.roleType != null and user.roleType !=''">
+				and role_type = #{user.roleType}
+			</if>
+		</where>
+	</select>
+
+	<select id="queryUserById" resultMap="userResultMap">
+		select * from user where id
+		= #{id}
+	</select>
+
+	<select id="queryUserByUsername" resultMap="userResultMap">
+		select * from user
+		where username = #{username}
+	</select>
+</mapper>	

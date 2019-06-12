@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yt.uniPlatform.mapper.JgCarrierMapper">
+	<resultMap type="com.yt.uniPlatform.dataObject.JgCarrierDO"
+		id="jgCarrierResultMap">
+		<id property="id" column="id" />
+		<result property="carrierId" column="carrier_id" />
+		<result property="name" column="name" />
+		<result property="code" column="code" />
+		<result property="address" column="address" />
+		<result property="telephoneNumber" column="telephone_number" />
+		<result property="faxNo" column="fax_no" />
+		<result property="affiliatedCompany"
+			column="affiliated_company" />
+		<result property="affiliatedCompanyName"
+			column="affiliated_company_name" />
+		<result property="status" column="status" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+	</resultMap>
+
+	<select id="queryJgCarrierListByCondition"
+		parameterType="com.yt.uniPlatform.dataObject.JgCarrierDO"
+		resultMap="jgCarrierResultMap">
+		select * from jg_carrier
+		<where>
+			<if test="jgCarrier.name != null and jgCarrier.name !='' ">
+				and name like concat('%', #{jgCarrier.name}, '%')
+			</if>
+			<if test="jgCarrier.status != null and jgCarrier.status !='' ">
+				status = #{jgCarrier.status}
+			</if>
+		</where>
+	</select>
+</mapper>	
