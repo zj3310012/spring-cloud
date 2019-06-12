@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.yt</groupId>
-	<artifactId>apiGateway</artifactId>
+	<artifactId>api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>apiGateway</name>
 	<description>Demo project for Spring Boot</description>

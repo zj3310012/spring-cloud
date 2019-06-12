@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zj</groupId>
-	<artifactId>dataExchange</artifactId>
+	<artifactId>data-exchange</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dataExchange</name>
 	<description>Demo project for Spring Boot</description>

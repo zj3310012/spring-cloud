@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.yt</groupId>
-	<artifactId>uniPlatform</artifactId>
+	<artifactId>uni-platform</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>uniPlatform</name>
