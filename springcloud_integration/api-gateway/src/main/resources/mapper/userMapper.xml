@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yt.apiGateway.mapper.UserMapper">
+
+	<resultMap type="com.yt.apiGateway.dataObject.UserDO"
+		id="userResultMap">
+		<id property="id" column="id" />
+		<result property="publicKey" column="public_key" />
+		<result property="privateKey" column="private_key" />
+		<result property="symmetryKey" column="symmetry_key" />
+		<result property="keyType" column="key_type" />
+		<result property="isUse" column="is_use" />
+		<result property="userCode" column="user_code" />
+	</resultMap>
+
+	<select id="queryUserById" resultMap="userResultMap">
+		select * from bdm_common_thire_part_key where id
+		= #{id}
+	</select>
+
+	<select id="queryUserByUserCode" resultMap="userResultMap">
+		select * from bdm_common_thire_part_key
+		where user_code = #{userCode}
+	</select>
+</mapper>	
