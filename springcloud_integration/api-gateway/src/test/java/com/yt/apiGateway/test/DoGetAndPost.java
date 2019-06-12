@@ -29,7 +29,7 @@ import com.yt.apiGateway.utils.SignForDSA;
 
 public class DoGetAndPost {
 	
-	public static final String host = "http://localhost:9999/v1/dataExchange";
+	public static final String host = "http://localhost:9999/v1/data-exchange";
 	
 	private static final String publicKey="MIIBtzCCASwGByqGSM44BAEwggEfAoGBAP1/U4EddRIpUt9KnC7s5Of2EbdSPO9EAMMeP4C2USZpRV1AIlH7WT2NWPq/xfW6MPbLm1Vs14E7gB00b/JmYLdrmVClpJ+f6AR7ECLCT7up1/63xhv4O1fnxqimFQ8E+4P208UewwI1VBNaFpEy9nXzrith1yrv8iIDGZ3RSAHHAhUAl2BQjxUjC8yykrmCouuEC/BYHPUCgYEA9+GghdabPd7LvKtcNrhXuXmUr7v6OuqC+VdMCz0HgmdRWVeOutRZT+ZxBxCBgLRJFnEj6EwoFhO3zwkyjMim4TwWeotUfI0o4KOuHiuzpnWRbqN/C/ohNWLx+2J6ASQ7zKTxvqhRkImog9/hWuWfBpKLZl6Ae1UlZAFMO/7PSSoDgYQAAoGAU1OcmDmkF051rlglW7KUVwNhUphCvpw0VP/R0RK4gTimBDqd5xJ/YzHtrs/xU0MLYL+ZAyak0GE0PBxHfjUf7KCrh6NQdm0rgW9t3Gl98gqlj5aZKJYL6jRzKDtWPojuP+uRLasl1mfYL+xVVJBECbx7gTx2H70N72OO9x2/Lb4=";
 
