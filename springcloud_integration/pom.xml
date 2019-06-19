@@ -42,17 +42,6 @@
 
 	<packaging>pom</packaging>
 	<modules>
-		
-		
-		<module>register_center</module>
-		<module>sidecar</module>
-		
-		<module>zipkin-server</module>
 
-
-
-		<module>api-gateway</module>
-		<module>data-exchange</module>
-		<module>uni-platform</module>
 	</modules>
 </project>
