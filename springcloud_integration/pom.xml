@@ -43,5 +43,11 @@
 	<packaging>pom</packaging>
 	<modules>
 
+	<module>api-gateway</module>
+	<module>data-exchange</module>
+	<module>register_center</module>
+	<module>sidecar</module>
+	<module>uni-platform</module>
+	<module>zipkin-server</module>
 	</modules>
 </project>
