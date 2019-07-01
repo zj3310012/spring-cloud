@@ -1,7 +1,7 @@
 # springcloud
 springcloud内部项目实战，简单上手！
 
-本项目主要框架为：springboot、springcloud、mybatis
+本项目主要框架为：springboot、springcloud、mybatis</br>
 项目功能模块：
 1.register_center:eureka注册中心.
 2.api-gateway:api网管.主要功能：1.用户权限校验；2.AES对称加解密；3.DSA非对称签名校验；4.路由转发之前对httprequest数据内容进行转换
