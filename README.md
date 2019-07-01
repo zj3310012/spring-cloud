@@ -9,4 +9,7 @@ springcloud内部项目实战，简单上手！
                 提供swagger2web调试</br>
 4.uni-platform:统一接口api.主要功能：1.提供zipkin服务追踪功能；2.提供底层统一接口调用</br>
 5.zipkin-server:zipkin追踪服务web.主要功能：1.将追踪链数据存储到mysql；2.提供zipkin管理页面查看项目调用链中各阶段执行时间延迟</br>
-6.sidecar:python代理
+6.sidecar:python代理</br>
+
+简单示意图：</br>
+![image](https://github.com/zj3310012/springcloud/blob/master/images/springcloud_proces.png)
