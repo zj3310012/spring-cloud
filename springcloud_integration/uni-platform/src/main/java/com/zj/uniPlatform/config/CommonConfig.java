@@ -1,4 +1,4 @@
-package com.yt.uniPlatform.config;
+package com.zj.uniPlatform.config;
 
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;

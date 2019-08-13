@@ -1,65 +1,67 @@
-package com.yt.uniPlatform.dataObject;
 
-import java.io.Serializable;
+package com.zj.uniPlatform.service.user.dto;
+
 import java.util.Date;
 
+import com.zj.uniPlatform.utils.Page;
+
 /**
+ * 用户
  * 
  * @author zhangjing
- * date: 2019年4月2日 下午2:42:11
+ * date: 2019年2月22日 下午2:20:16
  */
-public class UserDO implements Serializable {
+public class UserDTO extends Page{
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -66957687596616436L;
-
-	// ID
+	private static final long serialVersionUID = -7612438700493548624L;
+	//ID
 	private int id;
-	// 密码
+	//密码
 	private String hash;
-	// 邮箱
+	//邮箱
 	private String email;
-	// 移动电话号码
+	//移动电话号码
 	private String mobile;
-	// 座机号码
+	//座机号码
 	private String telephone;
-	// 角色
+	//角色
 	private int roleType;
-	// 激活状态
+	//激活状态
 	private int active;
-	// 创建时间
+	//创建时间
 	private Date createTime;
-	// 用户名
+	//用户名
 	private String username;
-	// 全名
+	//全名
 	private String fullname;
-	// 头像地址
+	//头像地址
 	private String photoUrl;
-	// 中文全名
+	//中文全名
 	private String zhName;
-	// 用户工号
+	//用户工号
 	private String userNo;
-
+	
 	private String registractionId;
-	// 转运中心编码
+	//转运中心编码
 	private String fkLocationCode;
-	// 部门编号
+	//部门编号
 	private String fkDeptId;
-	// 更新时间
+	//更新时间
 	private Date updateTime;
-	// 注册来源
+	//注册来源
 	private int source;
-	// 用户类型
+	//用户类型
 	private int userType;
-	// 地址
+	//地址
 	private String address;
-	// 账户类型
+	//账户类型
 	private int comType;
-	// 注销/禁用标记
+	//注销/禁用标记
 	private int deleteFlag;
-	// 账户禁用原因
+	//账户禁用原因
 	private String reason;
 
 	public int getId() {
@@ -246,4 +248,5 @@ public class UserDO implements Serializable {
 		this.reason = reason;
 	}
 
+	
 }

@@ -1,4 +1,4 @@
-package com.yt.uniPlatform.service.user;
+package com.zj.uniPlatform.service.user;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.github.pagehelper.PageInfo;
-import com.yt.uniPlatform.service.user.dto.UserDTO;
+import com.zj.uniPlatform.service.user.dto.UserDTO;
 
 /**
  * 

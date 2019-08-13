@@ -1,4 +1,4 @@
-package com.yt.uniPlatform.service;
+package com.zj.uniPlatform.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.util.CollectionUtils;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.yt.uniPlatform.utils.BaseConvert;
-import com.yt.uniPlatform.utils.Page;
+import com.zj.uniPlatform.utils.BaseConvert;
+import com.zj.uniPlatform.utils.Page;
 
 /**
  * 统一返回处理

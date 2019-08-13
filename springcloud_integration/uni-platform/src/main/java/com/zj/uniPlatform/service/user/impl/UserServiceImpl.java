@@ -1,4 +1,4 @@
-package com.yt.uniPlatform.service.user.impl;
+package com.zj.uniPlatform.service.user.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.github.pagehelper.PageInfo;
-import com.yt.uniPlatform.dataObject.UserDO;
-import com.yt.uniPlatform.mapper.UserMapper;
-import com.yt.uniPlatform.service.AbstractServiceImpl;
-import com.yt.uniPlatform.service.user.UserService;
-import com.yt.uniPlatform.service.user.dto.UserDTO;
-import com.yt.uniPlatform.utils.BaseConvert;
+import com.zj.uniPlatform.dataObject.UserDO;
+import com.zj.uniPlatform.mapper.UserMapper;
+import com.zj.uniPlatform.service.AbstractServiceImpl;
+import com.zj.uniPlatform.service.user.UserService;
+import com.zj.uniPlatform.service.user.dto.UserDTO;
+import com.zj.uniPlatform.utils.BaseConvert;
 
 /**
  * 

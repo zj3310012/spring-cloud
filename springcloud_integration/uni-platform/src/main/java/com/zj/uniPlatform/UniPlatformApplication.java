@@ -1,4 +1,4 @@
-package com.yt.uniPlatform;
+package com.zj.uniPlatform;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

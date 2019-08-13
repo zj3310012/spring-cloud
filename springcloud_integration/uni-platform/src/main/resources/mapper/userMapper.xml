@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.yt.uniPlatform.mapper.UserMapper">
+<mapper namespace="com.zj.uniPlatform.mapper.UserMapper">
 
-	<resultMap type="com.yt.uniPlatform.dataObject.UserDO"
+	<resultMap type="com.zj.uniPlatform.dataObject.UserDO"
 		id="userResultMap">
 		<id property="id" column="id" />
 		<result property="transNumber" column="trans_number" />
@@ -31,7 +31,7 @@
 	</resultMap>
 
 	<select id="queryUserListByCondition"
-		parameterType="com.yt.uniPlatform.dataObject.UserDO"
+		parameterType="com.zj.uniPlatform.dataObject.UserDO"
 		resultMap="userResultMap">
 		select * from user
 		<where>

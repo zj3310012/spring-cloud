@@ -1,10 +1,10 @@
-package com.yt.uniPlatform.mapper;
+package com.zj.uniPlatform.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import com.yt.uniPlatform.dataObject.UserDO;
+import com.zj.uniPlatform.dataObject.UserDO;
 
 /**
  * 

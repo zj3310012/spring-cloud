@@ -1,4 +1,4 @@
-package com.yt.uniPlatform.utils;
+package com.zj.uniPlatform.utils;
 
 import java.io.Serializable;
 
