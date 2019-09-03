@@ -77,7 +77,7 @@ public class AESUtil {
 	 * @throws IllegalBlockSizeException 
 	 * @throws Exception
 	 */
-	public static String AESDncode(String content, String password) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException{
+	public static String AESDecode(String content, String password) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException{
 		// 1.构造密钥生成器，指定为AES算法,不区分大小写
 		KeyGenerator keygen = KeyGenerator.getInstance("AES");
 		// 2.根据password规则初始化密钥生成器

@@ -137,7 +137,7 @@ public class RequestFilter extends ZuulFilter {
 			// 获取解密请求参数字符串
 			String params;
 			try {
-				params = AESUtil.AESDncode(entryptParams, thridPassword);
+				params = AESUtil.AESDecode(entryptParams, thridPassword);
 			} catch (Exception e) {
 				LOGGER.error("解密参数异常",e);
 				setErrorResponse(requestContext,HttpResponseStatus.PARAMETER_DECRYPTION_EXCEPTION);

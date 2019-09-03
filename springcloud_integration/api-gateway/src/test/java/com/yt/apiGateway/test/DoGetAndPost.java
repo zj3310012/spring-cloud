@@ -162,7 +162,7 @@ public class DoGetAndPost {
 		String sign = requestBody.getString(HttpMessageParams.SIGN);
 		// 获取解密字符串
 		try {
-			String params = AESUtil.AESDncode(body, password);
+			String params = AESUtil.AESDecode(body, password);
 			JSONObject paramsJson = JSONObject.parseObject(params);
 			String code = paramsJson.getString(HttpMessageParams.CODE);
 			String timeStamp = paramsJson.getString(HttpMessageParams.TIMESTAMP);
