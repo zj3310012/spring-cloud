@@ -85,9 +85,18 @@
 		</plugins>
 		
 	    <resources>
-	        <resource>
+           <resource>
 	           <directory>src/main/java</directory>
-	        </resource>     
+               <includes>
+                   <include>**/*.xml</include>
+               </includes>
+	        </resource> 
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>     
 	    </resources>
 	</build>
 
