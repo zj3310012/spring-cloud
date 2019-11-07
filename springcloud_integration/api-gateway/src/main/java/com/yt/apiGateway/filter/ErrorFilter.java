@@ -31,6 +31,15 @@ public class ErrorFilter extends AbstractResponseFilter {
 			ZuulException zuulException = (ZuulException) e;
 			LOGGER.error("系统错误", zuulException);
 			responseErrorBody(HttpResponseStatus.CONNECTION_EXCEPTION, requestContext);
+			
+	/*		//在家里试试
+			HttpServletRequest request = requestContext.getRequest();
+			request.setAttribute("javax.servlet.error.status_code", zuulException.nStatusCode);
+			request.setAttribute("javax.servlet.error.exception", zuulException);
+			if (StringUtils.hasText(zuulException.errorCause)) {
+				request.setAttribute("javax.servlet.error.message", zuulException.errorCause);
+			}*/
+			
 			// 删除该异常信息,不然在下一个过滤器中还会被执行处理
 			requestContext.remove("throwable");
 			// 根据具体的业务逻辑来处理
