@@ -4,6 +4,7 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -40,6 +41,11 @@ public class FilterConfig {
 	@Bean
 	public ErrorFilter errorFilter() {
 		return new ErrorFilter();
+	}
+	
+	@Bean
+	public AlwaysSampler defaultSampler () {
+		return new AlwaysSampler();
 	}
 
 	@Bean
