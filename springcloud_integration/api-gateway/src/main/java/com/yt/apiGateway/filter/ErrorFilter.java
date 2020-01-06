@@ -10,6 +10,12 @@ import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import com.yt.apiGateway.enums.HttpResponseStatus;
 
+/**
+ * 统一错误返回
+ * 
+ * @author zhangjing
+ * Date:2019年11月29日下午9:17:21
+ */
 @ConditionalOnProperty(name="zuul.SendErrorFilter.error.disable")
 public class ErrorFilter extends SendErrorFilter{
 	
